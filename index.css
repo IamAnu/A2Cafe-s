@@ -21,6 +21,7 @@
     list-style-type: none;
     margin: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 .restaurant-container{
     display: flex;
@@ -121,4 +122,27 @@
     cursor: pointer;
 }
 
+
+/* Menu Page  */
+.restaurant-menu-container{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.menu-items{
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px lightgray;  
+    cursor: pointer;
+    /* transform: scale(1) ; */
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
 

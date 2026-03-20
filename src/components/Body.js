@@ -12,15 +12,17 @@ function Body() {
 
     useEffect(() => {
         fetchData();
-        console.log("Use Effect Called");
+        // console.log("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6293084343315&lng=77.39157244563103&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
     }, [])
 
     const fetchData = async () => {
 
         try {
+
             const response = await fetch(
-                "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.99077958483023&lng=79.44214638322592&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+                "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6293084343315&lng=77.39157244563103&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
             );
+
 
             const json = await response.json();
             console.log("Full JSON:", json);
